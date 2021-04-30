@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Osteo-Care</title>
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Deca|Muli&display=swap&subset=vietnamese" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/ct.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="preload">
+        <div class="logo">
+            <span style="color: aquamarine;"><span style="color: whitesmoke;">OsTeO</span>-CaRe</span>
+        </div>
+        <div class="loader-frame">
+
+            <div class="loader2" id="loader2"></div>
+        </div>
+        <div style="width: 177px;
+        height: 170px;
+        margin: auto;
+        position: relative;
+        text-align: center;">
+            <p style="color: whitesmoke;position:absolute;font-size: 17px;font: 100;margin-top:200px;letter-spacing: 1px;">Click <a style="color:aquamarine;" href="{{ url_for('ct', filename='ct.html') }}">here</a> to Continue
+        </div>
+    </div>
+    <script>
+        (function() {
+            var preload = document.getElementById("preload");
+            var loading = 0;
+            var id = setInterval(frame, 64);
+
+            function frame() {
+                if (loading == 100) {
+                    clearInterval(id);
+                    window.open("{{ url_for('ct', filename='ct.html') }}", "_self");
+                } else {
+                    loading = loading + 1;
+                    if (loading == 90) {
+                        preload.style.animation = "fadeout 1s ease"
+                    }
+                }
+            }
+        })();
+    </script>
+</body>
+
+</html>

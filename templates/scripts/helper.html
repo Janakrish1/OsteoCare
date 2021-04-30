@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive</title>
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Deca|Muli&display=swap&subset=vietnamese" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/ct.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="box" style="width: 20%;
+            height: 50%;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-left: 100px;
+            padding-right: 100px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-image: linear-gradient(to top, #21064b 0%, #208c94 100%);
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 0 0 10px whitesmoke;">
+                <div class="icon" style="    position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-image: linear-gradient(to top, #208c94 0%, #21064b 100%);
+                transition: 0.4s;
+                z-index: 1;
+                border-radius: 20px;">
+                    <p><i class="fa fa-question" aria-hidden="true"></i></p>
+                </div>
+                <div class="content">
+                    <p>OsTeO-CaRe is an Deep Learning based Web-Application. <br><i class="fa fa-hand-o-right" aria-hidden="true"></i> Upload your sample Medical Image in the DropBox in ScanCT page. <br><i class="fa fa-hand-o-right" aria-hidden="true"></i>                        Click Diagonose button for instant report on your Bone Condition. </p>
+                </div>
+            </div>
+        </div>
+        <div class="loader-frame ">
+
+        </div>
+    </div>
+    </div>
+    <div class="mobile-view ">
+
+    </div>
+    <div class="tablet-view ">
+
+    </div>
+
+
+    </div>
+    <footer class="footer-distributed ">
+
+        <div class="footer-left ">
+
+            <h3>OsTeO<span>-CaRe</span></h3>
+
+            <p class="footer-links ">
+                <a href="{{ url_for('ct', filename='ct.html') }} ">Scan CT</a> ·
+                <a href="#footer-company-about ">About</a> ·
+                <a href="#">Help</a> ·
+                <a href="#footer-center ">Contact</a>
+            </p>
+
+            <p class="footer-company-name ">PSG TECH &copy; 2021</p>
+        </div>
+
+        <div class="footer-center ">
+
+            <div>
+                <i class="fa fa-map-marker "></i>
+                <p><span>peelamedu, Coimbatore</span> TamilNadu, India</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone "></i>
+                <p>+91 9999999999</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope "></i>
+                <p><a href="mailto:sjagatheesh07@gmail.com ">abcdefg@gmail.com</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-right ">
+            <p class="footer-company-about ">
+                <span>About</span> The site is to automatically ditect Osteoporosis using axial lumbar CT images , by just uploading the CT images in the field.
+            </p>
+            <div>
+                <i class="fa fa-map-linkedin ">Fb</i>
+                <i class="fa fa-map-linkedin ">Ln</i>
+                <i class="fa fa-map-linkedin ">G+</i>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
